@@ -1,0 +1,13 @@
+/* general styles */
+body {
+    height: 1000px;
+    padding-top: 80px;
+    padding-left: 90px;
+    padding-right: 20px;
+}
+
+p {
+    font-family: Roboto, Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}

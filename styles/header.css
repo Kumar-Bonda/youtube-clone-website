@@ -1,0 +1,188 @@
+/* header */
+.header {
+    background-color: white;
+    position: fixed;
+    height: 56px;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    padding-left: 15px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    z-index: 100; /* prevent overlapping on the header by the other elements */
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    width: 162px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0; /* prevents the shrinking of items */
+}
+
+.menu {
+    height: 24px;
+    cursor: pointer;
+}
+
+.logo {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.header-middle {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    max-width: 732px;
+}
+
+.search-bar {
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    height: 18px;
+    flex: 1;
+    margin-left: 75px;
+
+    padding: 10px 16px;
+    border: 1px solid rgb(204, 204, 204);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.15);
+    width: 0; /* shrinks as much as possible */
+    /* because of flex, the textbox will have the default width. So, by removing the width, it will be shrinked as much as possible. */
+}
+
+.search-button {
+    height: 40px;
+    width: 70px;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(204, 204, 204);
+    margin-left: -2px;
+}
+
+.search-button:hover {
+    background-color: rgb(237, 236, 236);
+}
+
+.search-icon {
+    height: 24px;
+}
+
+.voice-search-button {
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    background-color: rgb(247, 247, 247);
+    border: none;
+    border-radius: 20px;
+}
+
+.voice-search-button:hover {
+    background-color: rgb(227, 224, 224);
+}
+
+.voice-search-icon {
+    height: 24px;
+}
+
+.header-right {
+    width: 180px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    flex-shrink: 0;
+}
+
+.upload,
+.youtube-apps,
+.notifications {
+    height: 24px;
+}
+
+.notifications-count {
+    background-color: rgb(204, 0, 0);
+    color: white;
+    position: absolute;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 15px;
+    top: 4px;
+    right: 3px;
+}
+
+.account-picture-container {
+    padding: 7px 8px;
+}
+
+.account-picture {
+    height: 30px;
+    border-radius: 18px;
+}
+
+.menu-container,
+.upload-icon,
+.youtube-apps-icon,
+.notifications-container {
+    display: flex; /* to align horizontally */
+    padding: 7px 8px;
+    border-radius: 30px;
+    transition: background-color 0.15s;
+}
+
+.menu-container:hover,
+.upload-icon:hover,
+.youtube-apps-icon:hover,
+.notifications-container:hover {
+    background-color: rgb(227, 224, 224);
+}
+
+.search-button,
+.voice-search-button,
+.upload-icon,
+.youtube-apps-icon,
+.notifications-container,
+.account-picture-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon .tooltip,
+.youtube-apps-icon .tooltip,
+.notifications-container .tooltip,
+.account-picture-container .tooltip {
+    font-size: 12px;
+    background-color: rgba(96, 96, 96, 0.9);
+    color: white;
+    padding: 4px 8px;
+    position: absolute;
+    bottom: -38px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap; /* text will be displayed in one line */
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon:hover .tooltip,
+.youtube-apps-icon:hover .tooltip,
+.notifications-container:hover .tooltip,
+.account-picture-container:hover .tooltip {
+    opacity: 1;
+}

@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube-Clone</title>
+
+    <!-- Linking the 'Roboto' font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="styles/genaral.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/video.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="https://yt3.googleusercontent.com/ytc/AOPolaSARjbPqzt_G6xq3aT1BD5SF_Tmn20rXDypTYZobQ=s900-c-k-c0x00ffffff-no-rj">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header-left">
+            <div class="menu-container">
+                <img src="icons/hamburger-menu.svg" class="menu">
+            </div>
+            <img src="icons/youtube-logo.svg" class="logo">
+        </div>
+
+        <div class="header-middle">
+            <input type="text" placeholder="Search cheyyaku" class="search-bar">
+            <button class="search-button">
+                <img src="icons/search.svg" class="search-icon">
+                <p class="tooltip">Search</p>
+            </button>
+            <button class="voice-search-button">
+                <img src="icons/voice-search-icon.svg" class="voice-search-icon">
+                <p class="tooltip">Search with your voice</p>
+            </button>
+        </div>
+
+        <div class="header-right">
+            <div class="upload-icon">
+                <img src="icons/upload.svg" class="upload">
+                <p class="tooltip">Upload</p>
+            </div>
+            <div class="youtube-apps-icon">
+                <img src="icons/youtube-apps.svg" class="youtube-apps">
+                <p class="tooltip">YouTube apps</p>
+            </div>
+            <div class="notifications-container">
+                <img src="icons/notifications.svg"class="notifications">
+                <p class="notifications-count">3</p>
+                <p class="tooltip">Notifications</p>
+            </div>
+            <div class="account-picture-container">
+                <img src="https://yt3.googleusercontent.com/ytc/AOPolaSARjbPqzt_G6xq3aT1BD5SF_Tmn20rXDypTYZobQ=s900-c-k-c0x00ffffff-no-rj" class="account-picture">
+                <p class="tooltip">Account</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- sidebar -->
+    <nav class="sidebar">
+        <div class="sidebar-option">
+            <img src="icons/home.svg">
+            <p>Home</p>
+        </div>
+
+        <div class="sidebar-option">
+            <img src="icons/explore.svg">
+            <p>Explore</p>
+        </div>
+
+        <div class="sidebar-option">
+            <img src="icons/subscriptions.svg">
+            <p>Subscriptions</p>
+        </div>
+
+        <div class="sidebar-option">
+            <img src="icons/originals.svg">
+            <p>Originals</p>
+        </div>
+
+        <div class="sidebar-option">
+            <img src="icons/youtube-music.svg">
+            <p>YouTube Music</p>
+        </div>
+
+        <div class="sidebar-option">
+            <img src="icons/library.svg">
+            <p>Library</p>
+        </div>
+    </nav>
+
+    <!-- video-details -->
+    <main>
+        <section class="video-preview-grid">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/chFkzelm5-U?si=Il5kXRQZyIK2eK8o">
+                        <img src="https://i.ytimg.com/vi/chFkzelm5-U/maxresdefault.jpg" class="thumbnail">
+                    </a>
+                    <p class="video-duration">10:09</p>
+                </div>
+        
+                <div class="video-info-grid">
+                    <div class="channel-profile-container">
+                        <a href="https://www.youtube.com/@telugubadi">
+                            <img src="https://yt3.googleusercontent.com/ytc/APkrFKar8SDW77DIgSlQtG3XY889COg--4kpvUHDCmM8=s900-c-k-c0x00ffffff-no-rj" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-profile">
+                            <img src="https://yt3.googleusercontent.com/ytc/APkrFKar8SDW77DIgSlQtG3XY889COg--4kpvUHDCmM8=s900-c-k-c0x00ffffff-no-rj">
+                            <div class="channel-stats">
+                                <p class="channel-name">Telugu Badi</p>
+                                <p class="subscribers-count">2.15M subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://youtu.be/chFkzelm5-U?si=Il5kXRQZyIK2eK8o" class="video-title-link">
+                            <p class="video-title">
+                                Space Travelling Documentary in Telugu | Telugu Badi
+                            </p>
+                        </a>
+        
+                        <p class="video-author">
+                            Telugu Badi
+                        </p>
+        
+                        <p class="video-stats">
+                            1.24M views &#183 6 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/NgBoMJy386M?si=-0nKkXK1eyKJWrt-">
+                        <img src="https://i.ytimg.com/vi/Gg7_9Xd06rk/maxresdefault.jpg" class="thumbnail">
+                    </a>
+                    <p class="video-duration">3:20</p>
+                </div>
+        
+                <div class="video-info-grid">
+                    <div class="channel-profile-container">
+                        <a href="https://www.youtube.com/@DVVMovies">
+                            <img src="https://yt3.googleusercontent.com/yLoFyAjWDE9wCZVMpOU_btGz8L-3iBvugSD2UDckz_WezSsZ1GvfKJnG_XN1KU3JW0wZQo1QRQ=s900-c-k-c0x00ffffff-no-rj" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-profile">
+                            <img src="https://yt3.googleusercontent.com/yLoFyAjWDE9wCZVMpOU_btGz8L-3iBvugSD2UDckz_WezSsZ1GvfKJnG_XN1KU3JW0wZQo1QRQ=s900-c-k-c0x00ffffff-no-rj">
+                            <div class="channel-stats">
+                                <p class="channel-name">DVV Entertainment</p>
+                                <p class="subscribers-count">2.87M subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://youtu.be/NgBoMJy386M?si=-0nKkXK1eyKJWrt-" class="video-title-link">
+                            <p class="video-title">
+                                RRR Trailer (Telugu) - NTR, Ram Charan | SS Rajamouli
+                            </p>
+                        </a>
+        
+                        <p class="video-author">
+                            DVV Entertainment
+                        </p>
+        
+                        <p class="video-stats">
+                            82M views &#183 1 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/uj1Rdf9a3YA?si=lBSSPblOdXpm59tk">
+                        <img src="https://i.ytimg.com/vi/uj1Rdf9a3YA/maxresdefault.jpg" class="thumbnail">
+                    </a>
+                    <p class="video-duration">6:45</p>
+                </div>
+        
+                <div class="video-info-grid">
+                    <div class="channel-profile-container">
+                        <a href="https://www.youtube.com/@FilmyGeeks">
+                            <img src="https://yt3.googleusercontent.com/LlMkDqUi1px1Sf-i-8l__B3syXMIezkvDDqbSUxyl6owyVB6Csvqtzawd8c4ROnszOupQWGzzLs=s900-c-k-c0x00ffffff-no-rj" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-profile">
+                            <img src="https://yt3.googleusercontent.com/LlMkDqUi1px1Sf-i-8l__B3syXMIezkvDDqbSUxyl6owyVB6Csvqtzawd8c4ROnszOupQWGzzLs=s900-c-k-c0x00ffffff-no-rj">
+                            <div class="channel-stats">
+                                <p class="channel-name">Filmy Geeks</p>
+                                <p class="subscribers-count">376k subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://youtu.be/uj1Rdf9a3YA?si=lBSSPblOdXpm59tk" class="video-title-link">
+                            <p class="video-title">
+                                Christopher Nolan's Three qualities of film making || Decoding Directors #1
+                            </p>
+                        </a>
+        
+                        <p class="video-author">
+                            Filmy Geeks
+                        </p>
+        
+                        <p class="video-stats">
+                            182k views &#183 5 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/WWr9086eWtY?si=xmr2QNNjd-TfSbPj">
+                        <img src="https://i.ytimg.com/vi/WWr9086eWtY/maxresdefault.jpg" class="thumbnail">
+                    </a>
+                    <p class="video-duration">2:19</p>
+                </div>
+        
+                <div class="video-info-grid">
+                    <div class="channel-profile-container">
+                        <a href="https://www.youtube.com/@SonyMusicSouth">
+                            <img src="https://yt3.googleusercontent.com/ytc/APkrFKbGREEBS9tvkobo4vxoV9j-no0Hf9tSGx-vx6vp0Q=s900-c-k-c0x00ffffff-no-rj" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-profile">
+                            <img src="https://yt3.googleusercontent.com/ytc/APkrFKbGREEBS9tvkobo4vxoV9j-no0Hf9tSGx-vx6vp0Q=s900-c-k-c0x00ffffff-no-rj">
+                            <div class="channel-stats">
+                                <p class="channel-name">Sony Music South</p>
+                                <p class="subscribers-count">16.1M subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://youtu.be/WWr9086eWtY?si=xmr2QNNjd-TfSbPj" class="video-title-link">
+                            <p class="video-title">
+                                LEO - Ordinary Person Lyric | Anirudh Ravichander, NikhitaGandhi
+                            </p>
+                        </a>
+        
+                        <p class="video-author">
+                            Sony Music South
+                        </p>
+        
+                        <p class="video-stats">
+                            9.21M views &#183 1 week ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/pTZN-2_pEMg?si=aVZ9TLo1p11-WoyJ">
+                        <img src="https://i.ytimg.com/vi/pTZN-2_pEMg/maxresdefault.jpg" class="thumbnail">
+                    </a>
+                    <p class="video-duration">8:31</p>
+                </div>
+        
+                <div class="video-info-grid">
+                    <div class="channel-profile-container">
+                        <a href="https://www.youtube.com/@TheStoicManLab">
+                            <img src="https://yt3.googleusercontent.com/eRQ8hZseCb7yADMpf9mi65dnsBK94hfnKkybFyqXVlDeFcV9yml5Yji5yo5fYmo888hVr6UwHA=s900-c-k-c0x00ffffff-no-rj" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-profile">
+                            <img src="https://yt3.googleusercontent.com/eRQ8hZseCb7yADMpf9mi65dnsBK94hfnKkybFyqXVlDeFcV9yml5Yji5yo5fYmo888hVr6UwHA=s900-c-k-c0x00ffffff-no-rj">
+                            <div class="channel-stats">
+                                <p class="channel-name">The Stoic Man Lab</p>
+                                <p class="subscribers-count">51.7k subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://youtu.be/pTZN-2_pEMg?si=aVZ9TLo1p11-WoyJ" class="video-title-link">
+                            <p class="video-title">
+                                8 Stoic Lessons MEN learn TOO late in life | Stoicism
+                            </p>
+                        </a>
+        
+                        <p class="video-author">
+                            The Stoic Man Lab
+                        </p>
+        
+                        <p class="video-stats">
+                            1.9M views &#183 2 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/665o5OwV_KU?si=QDPwSXkHiOYBXXn3">
+                        <img src="https://i.ytimg.com/vi/665o5OwV_KU/maxresdefault.jpg" class="thumbnail">
+                    </a>
+                    <p class="video-duration">4:49</p>
+                </div>
+        
+                <div class="video-info-grid">
+                    <div class="channel-profile-container">
+                        <a href="https://www.youtube.com/@TheBeautyOf">
+                            <img src="https://yt3.googleusercontent.com/ytc/APkrFKaqJHUa_fpgaY3FlbUPz-UhLSTPl8ybK8z5AZ6-bg=s900-c-k-c0x00ffffff-no-rj" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-profile">
+                            <img src="https://yt3.googleusercontent.com/ytc/APkrFKaqJHUa_fpgaY3FlbUPz-UhLSTPl8ybK8z5AZ6-bg=s900-c-k-c0x00ffffff-no-rj">
+                            <div class="channel-stats">
+                                <p class="channel-name">The Beauty Of</p>
+                                <p class="subscribers-count">591k subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://youtu.be/665o5OwV_KU?si=QDPwSXkHiOYBXXn3" class="video-title-link">
+                            <p class="video-title">
+                                The Beauty Of Interstellar
+                            </p>
+                        </a>
+        
+                        <p class="video-author">
+                            The Beauty Of
+                        </p>
+        
+                        <p class="video-stats">
+                            5.11M views &#183 5 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=SBmSRK3feww">
+                        <img src="https://i.ytimg.com/vi/SBmSRK3feww/maxresdefault.jpg" class="thumbnail">
+                    </a>
+                    <p class="video-duration">11:57:22</p>
+                </div>
+        
+                <div class="video-info-grid">
+                    <div class="channel-profile-container">
+                        <a href="https://www.youtube.com/@SuperSimpleDev">
+                            <img src="https://yt3.googleusercontent.com/ytc/APkrFKaEovkjwOFQ3HMD8S5KFvjayVFtNBn2ofFrA9Xw=s900-c-k-c0x00ffffff-no-rj" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-profile">
+                            <img src="https://yt3.googleusercontent.com/ytc/APkrFKaEovkjwOFQ3HMD8S5KFvjayVFtNBn2ofFrA9Xw=s900-c-k-c0x00ffffff-no-rj">
+                            <div class="channel-stats">
+                                <p class="channel-name">SuperSimpleDev</p>
+                                <p class="subscribers-count">320k subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://www.youtube.com/watch?v=SBmSRK3feww" class="video-title-link">
+                            <p class="video-title">
+                                JavaScript Full Course (2023) - Beginner to Pro - Part 1
+                            </p>
+                        </a>
+        
+                        <p class="video-author">
+                            SuperSimpleDev
+                        </p>
+        
+                        <p class="video-stats">
+                            2.49M views &#183 7 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/YqeW9_5kURI?si=Z94FzOFrOm6aVFjI">
+                        <img src="https://i.ytimg.com/vi/rn9AQoI7mYU/maxresdefault.jpg" class="thumbnail">
+                    </a>
+                    <p class="video-duration">2:59</p>
+                </div>
+        
+                <div class="video-info-grid">
+                    <div class="channel-profile-container">
+                        <a href="https://www.youtube.com/channel/UCMJ5Qf3sOvQpcYiai1Noa3Q">
+                            <img src="https://yt3.googleusercontent.com/ytc/APkrFKZOS2jE6YMajo2wjFzJhX9_gnGxoLICwtRGFmn53g=s900-c-k-c0x00ffffff-no-rj" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-profile">
+                            <img src="https://yt3.googleusercontent.com/ytc/APkrFKZOS2jE6YMajo2wjFzJhX9_gnGxoLICwtRGFmn53g=s900-c-k-c0x00ffffff-no-rj">
+                            <div class="channel-stats">
+                                <p class="channel-name">Major Lazer Official &#9834;</p>
+                                <p class="subscribers-count">14.8M subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://youtu.be/YqeW9_5kURI?si=Z94FzOFrOm6aVFjI" class="video-title-link">
+                            <p class="video-title">
+                                Major Lazer & DJ Snake - Lean On (feat. MØ) (Official Music Video)
+                            </p>
+                        </a>
+        
+                        <p class="video-author">
+                            Major Lazer Official &#9834;
+                        </p>
+        
+                        <p class="video-stats">
+                            3.4B views &#183 8 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=W6t4tjVrh3M">
+                        <img src="https://i.ytimg.com/vi/W6t4tjVrh3M/maxresdefault.jpg" class="thumbnail">
+                    </a>
+                    <p class="video-duration">37:27</p>
+                </div>
+        
+                <div class="video-info-grid">
+                    <div class="channel-profile-container">
+                        <a href="https://www.youtube.com/@ProjectShivoham">
+                            <img src="https://yt3.googleusercontent.com/ytc/APkrFKblYn1Rq7ubERoImjfoHAZMwBeK6LeKMiNWTOnX3w=s900-c-k-c0x00ffffff-no-rj" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-profile">
+                            <img src="https://yt3.googleusercontent.com/ytc/APkrFKblYn1Rq7ubERoImjfoHAZMwBeK6LeKMiNWTOnX3w=s900-c-k-c0x00ffffff-no-rj">
+                            <div class="channel-stats">
+                                <p class="channel-name">Project Shivoham</p>
+                                <p class="subscribers-count">326k subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://www.youtube.com/watch?v=W6t4tjVrh3M" class="video-title-link">
+                            <p class="video-title">
+                                A brief history of 18 PURANAS
+                            </p>
+                        </a>
+        
+                        <p class="video-author">
+                            Project Shivoham
+                        </p>
+        
+                        <p class="video-stats">
+                            115k views &#183 9 days ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=cq2iTHoLrt0">
+                        <img src="https://img.youtube.com/vi/cq2iTHoLrt0/maxresdefault.jpg" class="thumbnail">
+                    </a>
+                    <p class="video-duration">2:27</p>
+                </div>
+        
+                <div class="video-info-grid">
+                    <div class="channel-profile-container">
+                        <a href="https://www.youtube.com/@Netflix">
+                            <img src="https://yt3.googleusercontent.com/ytc/APkrFKYV4KHgrKl8ayyBOnJlJw0C3VXeraba0mSqtltECA=s900-c-k-c0x00ffffff-no-rj" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-profile">
+                            <img src="https://yt3.googleusercontent.com/ytc/APkrFKYV4KHgrKl8ayyBOnJlJw0C3VXeraba0mSqtltECA=s900-c-k-c0x00ffffff-no-rj">
+                            <div class="channel-stats">
+                                <p class="channel-name">Netflix</p>
+                                <p class="subscribers-count">27.2M subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://www.youtube.com/watch?v=cq2iTHoLrt0" class="video-title-link">
+                            <p class="video-title">
+                                Dark Season 3 | Official Trailer | Netflix
+                            </p>
+                        </a>
+        
+                        <p class="video-author">
+                            Netflix
+                        </p>
+        
+                        <p class="video-stats">
+                            4.8M views &#183 3 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=MSaj9Otax6Y">
+                        <img src="https://i.ytimg.com/vi/MSaj9Otax6Y/maxresdefault.jpg" class="thumbnail">
+                    </a>
+                    <p class="video-duration">2:27</p>
+                </div>
+        
+                <div class="video-info-grid">
+                    <div class="channel-profile-container">
+                        <a href="https://www.youtube.com/@SonyMusicSouth">
+                            <img src="https://yt3.googleusercontent.com/ytc/APkrFKbGREEBS9tvkobo4vxoV9j-no0Hf9tSGx-vx6vp0Q=s900-c-k-c0x00ffffff-no-rj" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-profile">
+                            <img src="https://yt3.googleusercontent.com/ytc/APkrFKbGREEBS9tvkobo4vxoV9j-no0Hf9tSGx-vx6vp0Q=s900-c-k-c0x00ffffff-no-rj">
+                            <div class="channel-stats">
+                                <p class="channel-name">Sony Music South</p>
+                                <p class="subscribers-count">16.1M subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://www.youtube.com/watch?v=MSaj9Otax6Y" class="video-title-link">
+                            <p class="video-title">
+                                LEO - Im Scared Lyric | Thalapathy Vijay | Anirudh | Lokesh Kanagaraj
+                            </p>
+                        </a>
+        
+                        <p class="video-author">
+                            Sony Music South
+                        </p>
+        
+                        <p class="video-stats">
+                            3.8M views &#183 8 days ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=2VmgpHUld8o">
+                        <img src="https://i.ytimg.com/vi/ouKbrNiaPxo/maxresdefault.jpg" class="thumbnail">
+                    </a>
+                    <p class="video-duration">2:27</p>
+                </div>
+        
+                <div class="video-info-grid">
+                    <div class="channel-profile-container">
+                        <a href="https://www.youtube.com/@LahariMusicIndia">
+                            <img src="https://yt3.googleusercontent.com/YjZu219ofIp1yVWLvmXqZBwZe6Cni-UGhDFqvRI6GyN8b0QNgcXNVGiWgay34etzyQE-h8xg=s900-c-k-c0x00ffffff-no-rj" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-profile">
+                            <img src="https://yt3.googleusercontent.com/YjZu219ofIp1yVWLvmXqZBwZe6Cni-UGhDFqvRI6GyN8b0QNgcXNVGiWgay34etzyQE-h8xg=s900-c-k-c0x00ffffff-no-rj">
+                            <div class="channel-stats">
+                                <p class="channel-name">Lahari Music - TSeries</p>
+                                <p class="subscribers-count">17.2M subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://www.youtube.com/watch?v=2VmgpHUld8o" class="video-title-link">
+                            <p class="video-title">
+                                Komuram Bheemudo Full Video Song (Telugu) | RRR
+                            </p>
+                        </a>
+        
+                        <p class="video-author">
+                            Lahari Music - TSeries
+                        </p>
+        
+                        <p class="video-stats">
+                            99M views &#183 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=bQk5t_dRYss&list=WL&index=18">
+                        <img src="https://i.ytimg.com/vi/bQk5t_dRYss/maxresdefault.jpg" class="thumbnail">
+                    </a>
+                    <p class="video-duration">1:19:19</p>
+                </div>
+        
+                <div class="video-info-grid">
+                    <div class="channel-profile-container">
+                        <a href="https://www.youtube.com/@FilmCompanion">
+                            <img src="https://yt3.googleusercontent.com/2fUptGcPzE5t7zeXpainu5bx0rluzYzcsHrG0bT53a_sN6ZGCUmT8T5Qk6Mo1Nph024jcAISL58=s176-c-k-c0x00ffffff-no-rj-mo" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-profile">
+                            <img src="https://yt3.googleusercontent.com/2fUptGcPzE5t7zeXpainu5bx0rluzYzcsHrG0bT53a_sN6ZGCUmT8T5Qk6Mo1Nph024jcAISL58=s176-c-k-c0x00ffffff-no-rj-mo">
+                            <div class="channel-stats">
+                                <p class="channel-name">Film Companion</p>
+                                <p class="subscribers-count">1.66M subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://www.youtube.com/watch?v=bQk5t_dRYss&list=WL&index=18" class="video-title-link">
+                            <p class="video-title">
+                                The Filmmakers' Adda 2022 | Best Films Of The Year | Film Companion
+                            </p>
+                        </a>
+        
+                        <p class="video-author">
+                            Film Companion
+                        </p>
+        
+                        <p class="video-stats">
+                            4M views &#183 10 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=VrJYq2exNAs&list=WL&index=21">
+                        <img src="https://i.ytimg.com/vi/VrJYq2exNAs/maxresdefault.jpg" class="thumbnail">
+                    </a>
+                    <p class="video-duration">6:44</p>
+                </div>
+        
+                <div class="video-info-grid">
+                    <div class="channel-profile-container">
+                        <a href="https://www.youtube.com/@TheBeautyOf">
+                            <img src="https://yt3.googleusercontent.com/ytc/APkrFKaqJHUa_fpgaY3FlbUPz-UhLSTPl8ybK8z5AZ6-bg=s900-c-k-c0x00ffffff-no-rj" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-profile">
+                            <img src="https://yt3.googleusercontent.com/ytc/APkrFKaqJHUa_fpgaY3FlbUPz-UhLSTPl8ybK8z5AZ6-bg=s900-c-k-c0x00ffffff-no-rj">
+                            <div class="channel-stats">
+                                <p class="channel-name">The Beauty Of</p>
+                                <p class="subscribers-count">591k subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://www.youtube.com/watch?v=VrJYq2exNAs&list=WL&index=21" class="video-title-link">
+                            <p class="video-title">
+                                The Beauty Of Game of Thrones
+                            </p>
+                        </a>
+        
+                        <p class="video-author">
+                            The Beauty Of
+                        </p>
+        
+                        <p class="video-stats">
+                            1.3M views &#183 4 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=VZiHzTMg_wI">
+                        <img src="https://i.ytimg.com/vi/VZiHzTMg_wI/maxresdefault.jpg" class="thumbnail">
+                    </a>
+                    <p class="video-duration">10:52</p>
+                </div>
+        
+                <div class="video-info-grid">
+                    <div class="channel-profile-container">
+                        <a href="https://www.youtube.com/@FilmyGeeks">
+                            <img src="https://yt3.googleusercontent.com/LlMkDqUi1px1Sf-i-8l__B3syXMIezkvDDqbSUxyl6owyVB6Csvqtzawd8c4ROnszOupQWGzzLs=s900-c-k-c0x00ffffff-no-rj" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-profile">
+                            <img src="https://yt3.googleusercontent.com/LlMkDqUi1px1Sf-i-8l__B3syXMIezkvDDqbSUxyl6owyVB6Csvqtzawd8c4ROnszOupQWGzzLs=s900-c-k-c0x00ffffff-no-rj">
+                            <div class="channel-stats">
+                                <p class="channel-name">Filmy Geeks</p>
+                                <p class="subscribers-count">376k subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://www.youtube.com/watch?v=VZiHzTMg_wI" class="video-title-link">
+                            <p class="video-title">
+                                7 Life Lessons from Jack Sparrow | Filmy Geeks
+                            </p>
+                        </a>
+        
+                        <p class="video-author">
+                            Filmy Geeks
+                        </p>
+        
+                        <p class="video-stats">
+                            1.4M views &#183 4 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?app=desktop&v=cW2RWZCUot4">
+                        <img src="https://i.ytimg.com/vi/cW2RWZCUot4/maxresdefault.jpg" class="thumbnail">
+                    </a>
+                    <p class="video-duration">0:47</p>
+                </div>
+        
+                <div class="video-info-grid">
+                    <div class="channel-profile-container">
+                        <a href="https://www.youtube.com/@yuvasudhaarts">
+                            <img src="https://yt3.googleusercontent.com/ytc/APkrFKaqhgl0c5pZcIF2pFfDtxKtWqk7VSsSBlQ-K2Xq=s900-c-k-c0x00ffffff-no-rj" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-profile">
+                            <img src="https://yt3.googleusercontent.com/ytc/APkrFKaqhgl0c5pZcIF2pFfDtxKtWqk7VSsSBlQ-K2Xq=s900-c-k-c0x00ffffff-no-rj">
+                            <div class="channel-stats">
+                                <p class="channel-name">Yuvasudha Arts</p>
+                                <p class="subscribers-count">33.2k subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://www.youtube.com/watch?app=desktop&v=cW2RWZCUot4" class="video-title-link">
+                            <p class="video-title">
+                                Fury of #NTR30 - Telugu | NTR | Koratala Siva | Anirudh Ravichander
+                            </p>
+                        </a>
+        
+                        <p class="video-author">
+                            Yuvasudha Arts
+                        </p>
+        
+                        <p class="video-stats">
+                            5.3M views &#183 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
